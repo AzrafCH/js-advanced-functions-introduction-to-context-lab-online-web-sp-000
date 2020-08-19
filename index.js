@@ -22,13 +22,13 @@ function createEmployeeRecords(arrayOfArrays) {
 function createTimeInEvent(obj, timeStamp) {
   let hour = parseInt(timeStamp.split(' ')[1]);
   let date = timeStamp.split(' ')[0];
-  obj.timeInEvents.push({type: "Timein", hour: hour, date: date})
+  obj.timeInEvents.push({type: "TimeIn", hour: hour, date: date})
   return obj
 }
 
 function createTimeOutEvent(obj, timeStamp) {
   let hour = parseInt(timeStamp.split(' ')[1]);
   let date = timeStamp.split(' ')[0];
-  obj.timeOutEvents.push({type: "Timeout", hour: hour, date: date})
+  obj.timeOutEvents.push({type: "TimeOut", hour: hour, date: date})
   return obj
 }
