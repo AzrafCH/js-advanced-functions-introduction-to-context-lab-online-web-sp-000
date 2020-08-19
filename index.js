@@ -59,3 +59,7 @@ function calculatePayroll(array) {
   let sum = array.map((e) => allWagesFor(e))
   return sum.reduce((num, sum) => num + sum)
 }
+
+function findEmployeeByFirstName(srcArray, firstName) {
+  return srcArray.find(x => {return x.firstName === firstName})
+}
