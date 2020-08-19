@@ -37,5 +37,5 @@ function hoursWorkedOnDate(obj, timeStamp) {
   let timeIn = obj.timeInEvents.find(x => x.date === timeStamp)
   let timeOut = obj.timeOutEvents.find(x => xdate === timeStamp)
   let result = (timeOut.hour - timeIn.hour) / 100
-  return result 
+  return result
 }
