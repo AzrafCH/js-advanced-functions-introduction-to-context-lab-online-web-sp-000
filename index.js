@@ -39,3 +39,7 @@ function hoursWorkedOnDate(obj, timeStamp) {
   let result = (timeOut.hour - timeIn.hour) / 100
   return result
 }
+
+function wagesEarnedOnDate(obj, timeStamp) {
+  return hoursWorkedOnDate(obj, timeStamp) * obj.payPerHour
+}
