@@ -16,4 +16,5 @@ function createEmployeeRecords(arrayOfArrays) {
   arrayOfArrays.forEach(element => {
     theArray.push(createEmployeeRecord(element))
   });
+  return theArray
 }
