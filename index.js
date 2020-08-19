@@ -10,3 +10,10 @@ function createEmployeeRecord(arr) {
   }
   return obj
 }
+
+function createEmployeeRecords(arrayOfArrays) {
+  let theArray = [];
+  arrayOfArrays.forEach(element => { 
+    theArray.push(createEmployeeRecord(element))
+  });
+}
