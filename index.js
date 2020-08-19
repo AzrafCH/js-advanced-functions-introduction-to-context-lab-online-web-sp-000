@@ -54,3 +54,8 @@ function allWagesFor(obj) {
    }, 0)
  return payable
 }
+
+function calculatePayroll(array) {
+  let sum = array.map((e) => allWagesFor(e))
+  return sum.reduce((num, sum) => num + sum)
+}
