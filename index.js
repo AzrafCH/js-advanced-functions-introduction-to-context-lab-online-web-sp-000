@@ -13,7 +13,7 @@ function createEmployeeRecord(arr) {
 
 function createEmployeeRecords(arrayOfArrays) {
   let theArray = [];
-  arrayOfArrays.forEach(element => { 
+  arrayOfArrays.forEach(element => {
     theArray.push(createEmployeeRecord(element))
   });
 }
