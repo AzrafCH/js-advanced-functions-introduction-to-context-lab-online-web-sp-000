@@ -8,5 +8,5 @@ function createEmployeeRecord(arr) {
     timeInEvents: [],
     timeOutEvents: []
   }
-  return obj 
+  return obj
 }
