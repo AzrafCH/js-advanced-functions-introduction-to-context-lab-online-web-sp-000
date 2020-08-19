@@ -43,3 +43,14 @@ function hoursWorkedOnDate(obj, timeStamp) {
 function wagesEarnedOnDate(obj, timeStamp) {
   return hoursWorkedOnDate(obj, timeStamp) * obj.payPerHour
 }
+
+function allWagesFor(obj) {
+  let eligibleDates = obj.timeInEvents.map(function(e){
+     return e.date
+   })
+
+ let payable = eligibleDates.reduce(function(memo, d){
+     return memo + wagesEarnedOnDate(obj, d)
+   }, 0)
+ return payable
+}
